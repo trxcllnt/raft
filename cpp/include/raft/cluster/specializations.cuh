@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021-2022, NVIDIA CORPORATION.
+ * Copyright (c) 2022, NVIDIA CORPORATION.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,19 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
- * This file is deprecated and will be removed in release 22.06.
- * Please use the cuh version instead.
- */
-
-/**
- * DISCLAIMER: this file is deprecated: use trustworthiness_score.cuh instead
- */
+#ifndef __CLUSTER_SPECIALIZATIONS_H
+#define __CLUSTER_SPECIALIZATIONS_H
 
 #pragma once
 
-#pragma message(__FILE__                                                  \
-                " is deprecated and will be removed in a future release." \
-                " Please use the cuh version instead.")
+#include <raft/distance/specializations.cuh>
+#include <raft/spatial/knn/specializations.cuh>
 
-#include "trustworthiness_score.cuh"
+#endif
